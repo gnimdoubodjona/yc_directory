@@ -3,11 +3,10 @@ import Image from "next/image";
 import { auth, signOut, signIn } from "@/auth";
 
 
-
 const Navbar = async () => {
     const session = await auth()
     return (
-        <header className="px-5 py-3 bg-white shadow-sm font-work-sans text-black">
+        <header className="px-5 py-3 bg-white shadow-sm text-black">
             <nav className="flex justify-between items-center">
                 <Link href="/">
                     <Image src="/logo.png" alt="logo" width={140} height={30} />
