@@ -19,7 +19,7 @@ const SearchForm = ( {query}: {query?:string} ) => {
                     {query && <SearchFormReset/>}
 
                     <button type="submit" className="search-btn text-white">
-                        S
+                        <i className="fa-light fa-magnifying-glass"></i>S
                     </button>
                 </div>
             </Form>
